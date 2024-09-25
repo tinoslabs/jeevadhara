@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="breadcrumbs overlay">
+<div class="container">
+<div class="bread-inner">
+<div class="row">
+<div class="col-12">
+<h2>Doctor Details</h2>
+<ul class="bread-list">
+<li><a href="{% url 'index' %}">Home</a></li>
+<li><i class="icofont-simple-right"></i></li>
+<li class="active">Doctor Details</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="doctor-details-area section">
+<div class="container">
+<div class="row">
+<div class="col-lg-5">
+<div class="doctor-details-item doctor-details-left">
+<img src="{% static 'img/doctor.png' %}" alt="#">
+<div class="doctor-details-contact">
+<h3>Contact info</h3>
+<ul class="basic-info">
+<li>
+<i class="icofont-ui-call"></i>
+Call : +91 9447307947
+</li>
+<li>
+<i class="icofont-ui-message"></i>
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="640c0108080b240901001701124a070b09">jeevadhara09@gmail.com</a>
+</li>
+<li>
+<i class="icofont-location-pin"></i>
+Jeevadhara Homoeo Medical Centre
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Okkal. P.O.,
+Ernakulam Dt.,
+Kerala., <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PIN:683 550.,
+India.
+</li>
+</ul>
+
+<ul class="social">
+<li><a href="#"><i class="icofont-facebook"></i></a></li>
+<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+<li><a href="#"><i class="icofont-twitter"></i></a></li>
+<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+</ul>
+
+<div class="doctor-details-work">
+<h3>Working hours</h3>
+<ul class="time-sidual">
+<li class="day">Monday - Friday <span>8.00-20.00</span></li>
+<li class="day">Saturday <span>9.00-18.30</span></li>
+<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+<!-- <li class="day">Monday - Friday <span>8.00-20.00</span></li> -->
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-7">
+<div class="doctor-details-item">
+<div class="doctor-details-right">
+<div class="doctor-name">
+<h3 class="name">Dr. Sherly Joseph</h3>
+<p class="deg">Chief Physician</p>
+<p class="degree">BHMS,MD is graduated in Homeopathy</p>
+</div>
+<div class="doctor-details-biography">
+<h3>Biography</h3>
+<p>Chief Physician -Dr. Sherly Joseph BHMS,MD is graduated in Homoeopathy from Mangalore University-in 1998. She has obtained post graduation from Rajiv Gandhi University of Health Sciences Bangalore, Karnataka in Malirea Matiria Medica in the year 2003.
+	Dr.Sherly Joseph belongs to the congregation of the Medical Sisters of St. Joseph ( MSJ ). Inspired by the Divine healer Jesus Christ, she joined the congregation in the year 1989. She has the religious name Sr.Sherin MSJ. The Congregation uphold the motto of Love, Service, and has the Vision. To touch the humanity with compassionate Heart to bring about wholeness.
+	<br>
+	MSJ mission is to contribute the best with generosity and joy as Angels of consolation, Mystic Activists change agents to facilitate healing and wholeness to humanity especially the poor and marginalized.
+	<br>
+	Following the example of Jesus and inbiding the spirit of the Congregation, Sr. Sherly Joseph ( Sr.Sherin MSJ ) renders her service in the field of homoeopathy in Jeevadhara Homoeo Medical Centre. Homoeopathy is a safe and effective treatment given to all diseases. Sr.Sherin has good experience to handle all the chronic diseases. This Centre promotes positive health through preventive medicine and Counseling.</p><br>
+
+</div>
+<div class="doctor-details-biography">
+<h3>Education</h3>
+<ul>
+<li>Bachelor of Homoeopathic Medicine and Surgery (BHMS) from Mangalore University - 1998.</li>
+<li>Post Graduation in Materia Medica from Rajiv Gandhi University of Health Sciences, Bangalore, Karnataka - 2003.</li>
+<!-- <li>MBBS degree in Neurosciences at University of Mediserv (2002)</li>
+<li>Higher Secondary Certificate at Mediserv collage (1991)</li> -->
+</ul>
+</div>
+<div class="doctor-details-biography">
+<!-- <h3>Biography</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+{% endblock %}
+</body>
+</html>

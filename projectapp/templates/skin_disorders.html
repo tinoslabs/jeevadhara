@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+		<!-- End Header Area -->
+	
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>Skin Disorders</h2>
+							<ul class="bread-list">
+								<li><a href="{% url 'index' %}">Home</a></li>
+								<li><i class="icofont-simple-right"></i></li>
+								<li class="active">Skin Disorders</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
+	
+		<!-- Start Portfolio Details Area -->
+		<section class="pf-details section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner-content">
+							<div class="image-slider">
+								<div class="pf-details-slider">
+									<img src="{% static 'img/call-bg.jpg' %}" alt="#">
+									<img src="{% static 'img/call-bg.jpg' %}"  alt="#">
+									<img src="{% static 'img/call-bg.jpg' %}"  alt="#">
+								</div>
+							</div>
+							<!-- <div class="date">
+								<ul>
+									<li><span>Category :</span> Heart Surgery</li>
+									<li><span>Date :</span> April 20, 2019</li>
+									<li><span>Client :</span> Suke Agency</li>
+									<li><span>Ags :</span> Typo</li>
+								</ul> -->
+							</div>
+							<div class="body-text">
+								<h3>Skin Disorders</h3> 
+								<p>	<strong> ▶️ Non Healing Wounds and (Chronic ) Ulsers of the Skin</strong> <br>
+									Definition : Inflammatory changes in a wound, with infection.  <br>
+									Causes : Local infection usually associated with trauma. <br>
+									Symptoms : Heat, swelling, pain, redness, fever. 
+									
+									<br><strong>▶️ Furunculosis(Boils)</strong><br>
+									Definition : A suppurative swelling of the skin and subcutaneous tissues,Usually hard and round, which may discharge. <br>
+									Causes : An infection, usually circulatory due to hyperglycemia(Diabetes mellitus) <br>
+									Symptoms : Throbbing pain, redness, fever, glandular enlargement, May become a carbuncle. 
+
+									<br><strong>▶️ Acne(pimples)</strong><br>
+									Definition : A chronic inflammation of the sebaceous glands of the skin, with The eruption of hard elevations and red areas of infection,(usuallyOf the face). <br>
+									Causes : Carbohydrate excess diet; constitutional, lack of hygiene, anxiety. <br>
+									Symptoms : Discomfort, irritation, infection, pain, discharge.
+
+									<br><strong>▶️ Warts</strong><br>
+									Definition : A benign overgrowth of the outer layer of the skin. <br>
+									Causes : Various. Often emotional or hereditary. Associated with the Sycosis miasm. <br>
+									Symptoms : Warts often disappear without treatment. Those on the sole of the Foot are especially painful.
+
+
+									<h3>Endocrine Disorders - hypogonadism ,Sub Fertility</h3> 
+									<p>Definition : A decrease in the production of spermatozoa and secretion of androgens. <br>
+										Causes : The functional failure of one or both testes. <br>
+										Symptoms : If occurring before puberty, the external genitalia and secondary sex Characteristics fail to develop. If after puberty, there is a gradual loss Of public hair and the external genitalia will atrophy. Psychological Changes may also occur.  </p>
+										
+
+										<h3>Psychiatric Disorders -Neurasthenia (Fatigue)</h3> 
+										<p>Definition : Tiredness, lassitude and absence of energy. <br>
+											Causes : Many causes; failure to lead a regulated life, anaemia, infection, Post-surgical, endocrinal, convalescence. <br>
+											Symptoms : Lack of energy and exhaustion.  </p>
+											
+								<!-- <div class="share">
+									<h4>Share Now -</h4>
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									</ul>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		{% endblock %}
+    </body>
+</html>

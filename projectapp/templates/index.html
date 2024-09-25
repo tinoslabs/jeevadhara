@@ -1,0 +1,593 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+        <!-- header nav bar end  -->
+
+
+        <!-- home-section start -->
+   
+        <section class="slider" style="background-color: white">
+            <div class="hero-slider">
+                <!-- Start Single Slider -->
+                <div class="single-slider" style="background-image: url('{% static 'img/slider2.jpg' %}')">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="text">
+                                    <h1>JEEVADHARA <span> HOMEO MEDICAL</span> CENTRE</h1>
+                                    <p>Our team of over 7000 doctors join me in giving you the best of modern healthcare to ensure you stay healthy, always.</p>
+                                    <div class="button">
+                                        {% if user.is_authenticated %}
+                                            <a href="{% url 'dashboard' %}" class="btn btn-primary">
+                                                <i class="mdi mdi-login me-2"></i>Dashboard
+                                            </a>
+                                        {% else %}
+                                            <a href="{% url 'login' %}" class="btn btn-primary">
+                                                <i class="mdi mdi-login me-2"></i>Make an appointment
+                                            </a>
+                                        {% endif %}
+                                        <a href="#services" class="btn primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Start Single Slider -->
+                <div class="single-slider" style="background-image: url('{% static 'img/slider.jpg' %}')">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="text">
+                                    <h1>JEEVADHARA <span> HOMEO MEDICAL</span> CENTRE</h1>
+                                    <p>Our team of over 7000 doctors join me in giving you the best of modern healthcare to ensure you stay healthy, always.</p>
+                                    <div class="button">
+                                        {% if user.is_authenticated %}
+                                            <a href="{% url 'dashboard' %}" class="btn btn-primary">
+                                                <i class="mdi mdi-login me-2"></i>Dashboard
+                                            </a>
+                                        {% else %}
+                                            <a href="{% url 'login' %}" class="btn btn-primary">
+                                                <i class="mdi mdi-login me-2"></i>Make an appointment
+                                            </a>
+                                        {% endif %}
+                                        <a href="#about-us" class="btn primary">About Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Start Single Slider -->
+                <div class="single-slider" style="background-image: url('{% static 'img/slider3.jpg' %}')">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="text">
+                                    <h1>JEEVADHARA <span> HOMEO MEDICAL</span> CENTRE</h1>
+                                    <p>Our team of over 7000 doctors join me in giving you the best of modern healthcare to ensure you stay healthy, always.</p>
+                                    <div class="button">
+                                        {% if user.is_authenticated %}
+                                            <a href="{% url 'dashboard' %}" class="btn btn-primary">
+                                                <i class="mdi mdi-login me-2"></i>Dashboard
+                                            </a>
+                                        {% else %}
+                                            <a href="{% url 'login' %}" class="btn btn-primary">
+                                                <i class="mdi mdi-login me-2"></i>Make an appointment
+                                            </a>
+                                        {% endif %}
+                                        <a href="{% url 'contact' %}" class="btn primary">Contact Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        
+        <section class="why-choose section" id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="about-header text-center">
+                                    <h1 class="lh-base">Why Choose <span class="text-primary">Jeevadhara </span> Homeo</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br> <br> <br>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="choose-left">
+                            <h3>Who We Are</h3>
+                            <p>Jeevadhara HMC is a homoeopathic treatment centre,, dedicated to providing holistic healthcare to patients. Founded by Dr. (Sr.) Sherine MSJ, BHMS, MD, the centre follows a holistic approach, guided by the motto of Love serves, inspired by the master healer Jesus.</p>
+                            <p>Dr. (Sr.) Sherine MSJ, the chief physician, has completed her post-graduation in Materia Medica from the Rajive Gandhi University of Health Sciences in Bangalore.</p>
+                            <h5>Our Congregation</h5>
+                            <p>The congregation of the Medical Sisters of St. Joseph was founded in 1944 by the late Rev. Msgr. Joseph. C. Panjikaran at Dharmagiri Kothamangalam. The congregation aims to provide medical facilities to the poor, downtrodden, and helpless people of Kerala.</p>
+                                <p>Msgr. Panjikaran, the founder, was born on September 10th, 1888. Deeply touched by the miseries of the poor, especially the sick, he envisioned the sick bed as the best place to experience the love of God.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="why-choose choose-right" style="background-image: url('{% static 'img/video-bg.jpg' %}')">
+                            <div class="video-image">
+                                <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="why-choose section" id="homeopathy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="about-header text-center">
+                                    <h1 class="lh-base">Discover the Healing Power of <span class="text-primary">Homeopathy</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <!-- Start Choose Left -->
+                        <div class="choose-left">
+                            <p>
+                                Homeopathy is a system of medicine that treats individuals with highly diluted substances, primarily in tablet form, aiming to trigger the body's natural healing mechanisms. Practitioners select medicines based on the patient's symptoms and their holistic assessment of the individual's health.
+                                The fundamental principle of homeopathy is "like cures like." This means a substance that causes symptoms in a healthy person can treat similar symptoms in someone who is unwell. For example, coffea, a remedy made from coffee, might be used to alleviate insomnia.
+                            </p>
+        
+                            <h5>▶️ Samuel Hahnemann and the Origins of Homeopathy</h5>
+                            <p>
+                                Homeopathy was founded over 200 years ago by Samuel Hahnemann, a German doctor and chemist. His approach to medicine emphasized rapid, gentle, and permanent restoration of health. Hahnemann's work, documented in his seminal text "Organon of Medicine," laid out principles that still guide homeopathic practice today. His humane approach focused on treating the whole person rather than just the disease.
+                            </p>
+                            
+                            <h5>▶️ How Homeopathic Medicines Are Prepared</h5>
+                            <p>
+                                Homeopathic medicines are prepared through a process of potentisation. This involves diluting the original substance (often a plant, mineral, or animal product) multiple times and vigorously shaking it at each step (succussion). This process aims to enhance the therapeutic properties of the medicine while minimizing potential side effects. Each medicine undergoes "proving," where volunteers (provers) take the substance and meticulously document the symptoms experienced. This meticulous process allows a wide range of natural substances to be tested and added to the homeopathic pharmacy, all without the use of animal testing.
+                            </p>
+                        </div>
+                        <!-- End Choose Left -->
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <!-- Start Choose Rights -->
+                        <div class="why-choose choose-right" style="background-image: url('{% static "img/video-bg.jpg" %}')">
+                            <div class="video-image">
+                                <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Choose Rights -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="we-offer-area text-center bg-gray" id="services" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="site-heading text-center">
+                            <!-- <h2>What we <span>Offer</span></h2> -->
+                            <h1 class="lh-base">We Offer Different Services To Improve Your Health
+                                    </h1>
+                            <!-- <h4>Lorem Ipsum is simply dummy text</h4> -->
+                        </div>
+                    </div>
+                </div>
+                    <div class="row our-offer-items less-carousel">
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <i class="fas fa-brain"></i>
+                                <h4>DISORDERS OF THE NERVOUS SYSTEM</h4>
+                                <p>
+                                    A brief derangement of cerebral function with fits or seizures, often resulting in a loss of consciousness.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- End Single Item -->
+    
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <i class="fas fa-heartbeat"></i>
+                                <h4>DISORDERS OF AUTONOMIC NERVOUS SYSTEM</h4>
+                                <p>
+                                    A disease condition in which the nerves of the autonomic nervous system are damaged.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- End Single Item -->
+    
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <i class="fas fa-heart"></i>
+                                <h4>CARDIAC DISORDERS</h4>
+                                <p>
+                                Pain and constriction in the precordium due to inadequate blood supply to the heart and blood vessels.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- End Single Item -->
+    
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                            <i class="icofont icofont-heartbeat"></i>
+                                <h4>CARDIO-VASCULAR DISORDERS</h4>
+                                <p>
+                                    An awareness of a rapid heart beat often accompanied with great anxiety.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- End Single Item -->
+    
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <i class="fas fa-tint"></i>
+                                <h4>VASCULAR DISORDERS</h4>
+                                <p>
+                                    A sustained elevation of blood pressure at rest, above the normal levels (For that age).
+                                </p><br>
+                            </div>
+                        </div>
+    
+                        <!-- End Single Item -->
+    
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <i class="fas fa-dna"></i>
+                                <h4>BLOOD DISORDERS</h4>
+                                <p>
+                                A reduced hemoglobin level in the blood, causing various health issues and fatigue.
+                                </p><br>
+                            </div>
+                        </div>
+    
+                        <!-- End Single Item -->
+                    </div>
+            </div>
+        </section>
+
+        <!-- services-section start -->
+        {% comment %} <div id="fun-facts" class="fun-facts section overlay" style="background-color: #4b62cc;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-fun">
+                            <i class="icofont icofont-heart-beat"></i>
+                            <div class="content">
+                                <span style="display: inline-block;" class="counter">85</span><span style="display: inline-block;">%</span>
+                                <p>Cardiology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-fun">
+                            <i class="icofont icofont-doctor"></i>
+                            <div class="content">
+                                <span style="display: inline-block;" class="counter">60</span><span style="display: inline-block;">%</span>
+                                <p>General Practice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-fun">
+                            <i class="icofont icofont-surgeon-alt"></i>
+                            <div class="content">
+                                <span style="display: inline-block;" class="counter">89</span><span style="display: inline-block;">%</span>
+                                <p>General Surgery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-fun">
+                            <i class="icofont icofont-pills"></i>
+                            <div class="content">
+                                <span style="display: inline-block;" class="counter">60</span><span style="display: inline-block;">%</span>
+                                <p>Pharmacology</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> {% endcomment %}
+   
+
+    {% comment %} <section class="why-choose section" id="homeopathy">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="about-header text-center">
+                                <h1 class="lh-base">Discover the Healing Power of <span class="text-primary">Homeopathy</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <!-- Start Choose Left -->
+                    <div class="choose-left">
+                        <p style="justify-content:center;">
+                            Homeopathy is a system of medicine that treats individuals with highly diluted substances, primarily in tablet form, aiming to trigger the body's natural healing mechanisms. Practitioners select medicines based on the patient's symptoms and their holistic assessment of the individual's health.
+                            The fundamental principle of homeopathy is "like cures like." This means a substance that causes symptoms in a healthy person can treat similar symptoms in someone who is unwell. For example, coffea, a remedy made from coffee, might be used to alleviate insomnia.
+                        </p>
+                        <h5>▶️ Samuel Hahnemann and the Origins of Homeopathy</h5>
+                        <p>
+                            Homeopathy was founded over 200 years ago by Samuel Hahnemann, a German doctor and chemist. His approach to medicine emphasized rapid, gentle, and permanent restoration of health. Hahnemann's work, documented in his seminal text "Organon of Medicine," laid out principles that still guide homeopathic practice today. His humane approach focused on treating the whole person rather than just the disease.
+                        </p>
+                        
+                        <h5>▶️ How Homeopathic Medicines Are Prepared</h5>
+                        <p>
+                            Homeopathic medicines are prepared through a process of potentisation. This involves diluting the original substance (often a plant, mineral, or animal product) multiple times and vigorously shaking it at each step (succussion). This process aims to enhance the therapeutic properties of the medicine while minimizing potential side effects. Each medicine undergoes "proving," where volunteers (provers) take the substance and meticulously document the symptoms experienced. This meticulous process allows a wide range of natural substances to be tested and added to the homeopathic pharmacy, all without the use of animal testing.
+                        </p>
+                    </div>
+                    <!-- End Choose Left -->
+                </div>
+                <div class="col-lg-6 col-12">
+                    
+                    <div class="why-choose choose-right" style="background-image: url('{% static 'assetss/img/video-bg.jpg' %}')">
+                        <div class="video-image">
+                            <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section> {% endcomment %}
+    
+
+    {% if data.Services == 0 %}
+    <!-- services-section start -->
+        <section class="we-offer-area text-center bg-gray" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="site-heading text-center">
+                            <h1 class="lh-base">We Offer Different Services To Improve Your Health</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row our-offer-items less-carousel">
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-brain"></i>
+                            <h4>DISORDERS OF THE NERVOUS SYSTEM</h4>
+                            <p>A brief derangement of cerebral function with fits or seizures, often resulting in a loss of consciousness.</p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-heartbeat"></i>
+                            <h4>DISORDERS OF AUTONOMIC NERVOUS SYSTEM</h4>
+                            <p>A disease condition in which the nerves of the autonomic nervous system are damaged.</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-heart"></i>
+                            <h4>CARDIAC DISORDERS</h4>
+                            <p>Pain and constriction in the precordium due to inadequate blood supply to the heart and blood vessels.</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional items follow the same structure -->
+                </div>
+            </div>
+        </section>
+    {% endif %}
+
+    <section class="pricing-table section" id='treatments'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="site-heading text-center">
+                        <h1 class="lh-base">We Provide You The Best Treatment In Reasonable Price</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Single Table -->
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="single-table">
+                        <div class="table-head">
+                            <div class="icon">
+                                <i class="icofont-woman-bird"></i>
+                            </div>
+                            <h4 class="title">Disorders Of Women</h4>
+                        </div>
+                        <ul class="table-list">
+                            <li><i class="icofont icofont-ui-check"></i>Delayed Puberty ( In females )</li>
+                            <li><i class="icofont icofont-ui-check"></i>Irregular Menstruation</li>
+                            <li><i class="icofont icofont-ui-check"></i>Leucorrhoea</li>
+                            <li><i class="icofont icofont-ui-check"></i>Oligomenorrhoea ( scanty flow at periods )</li>
+                        </ul>
+                        <div class="table-bottom">
+                            <a class="btn" href="{% url 'disorders_of_women' %}">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Single Tables follow the same structure -->
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="single-table">
+                        <div class="table-head">
+                            <div class="icon">
+                                <i class="icofont-blood-drop"></i>
+                            </div>
+                            <h4 class="title">Skin Disorders</h4>
+                        </div>
+                        <ul class="table-list">
+                            <li><i class="icofont icofont-ui-check"></i>Furunculosis (Boils)</li>
+                            <li><i class="icofont icofont-ui-check"></i>Acne (pimples)</li>
+                            <li><i class="icofont icofont-ui-check"></i>Warts</li>
+                            <li><i class="icofont icofont-ui-check"></i>Non Healing Wounds and (Chronic) Ulcers of the Skin</li>
+                        </ul>
+                        <div class="table-bottom">
+                            <a class="btn" href="{% url 'skin_disorders' %}">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="single-table">
+                        <div class="table-head">
+                            <div class="icon">
+                                <i class="icofont-heart-beat"></i>
+                            </div>
+                            <h4 class="title">Cardiac Disorders</h4>
+                        </div>
+                        <ul class="table-list">
+                            <li><i class="icofont icofont-ui-check"></i>Homoeopathic Treatment for CAD</li>
+                            <li><i class="icofont icofont-ui-check"></i>Valvular Disease Management</li>
+                            <li><i class="icofont icofont-ui-check"></i>RHD: Homoeopathic Approach</li>
+                            <li><i class="icofont icofont-ui-check"></i>Homoeopathic Solutions for Septal Defects & Aneurysms</li>
+                        </ul>
+                        <div class="table-bottom">
+                            <a class="btn" href="{% url 'cardiac_disorders' %}">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>	
+    </section>
+    <style>
+        /* General section styling */
+        .we-offer-area {
+            padding: 50px 0;
+            background-color: #f7f7f7;
+        }
+
+        /* Site heading styling */
+        .site-heading h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        /* Cards container styling */
+        .our-offer-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Individual card styling */
+        .our-offer-items .item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            height: 100%;
+        }
+
+        .our-offer-items .item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Icon styling */
+        .our-offer-items .item i {
+            font-size: 48px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        /* Service title styling */
+        .our-offer-items .item h4 {
+            font-size: 22px;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        /* Description text styling */
+        .our-offer-items .item p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Equal height for each card */
+        .equal-height {
+            display: flex;
+            align-items: stretch;
+        }
+
+        /* Responsive design */
+        @media (max-width: 991px) {
+            .our-offer-items .item {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .our-offer-items .item {
+                margin-bottom: 20px;
+            }
+
+            .site-heading h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+
+   
+
+    {% if data.Department == 0 %}
+    <!-- departments-section end -->
+    {% endif %}
+
+    {% if data.Team == 0 %}
+    {% endif %}
+
+    {% if data.Feedback == 0 %}
+    {% endif %}
+
+    {% if data.FaQs == 0 %}
+    {% endif %}
+
+        
+        {% endblock %}
+		<!--/ End Footer Area -->
+        
+		
+		
+    </body>
+</html>
