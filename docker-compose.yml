@@ -12,7 +12,8 @@ services:
     volumes:
       - .:/project
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     profiles:
       - development
 
@@ -25,7 +26,8 @@ services:
       - static_volume:/project/staticfiles
       - media_volume:/project/mediafiles
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     profiles:
       - production
 
